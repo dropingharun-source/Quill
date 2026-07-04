@@ -1,0 +1,115 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.title {
+  font-size: 27px;
+}
+
+.subtitle {
+  font: 500 14px var(--font-sans);
+  color: var(--ink-mute);
+  margin-top: 3px;
+}
+
+.emptyCard {
+  background: var(--card);
+  border: 1px solid var(--line-card);
+  border-radius: var(--r-card);
+  padding: 34px 22px;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+  font: 500 14px var(--font-sans);
+  color: var(--ink-ghost);
+}
+
+.dayCard {
+  background: var(--card);
+  border: 1px solid var(--line-card);
+  border-radius: var(--r-card);
+  padding: 18px 22px;
+  box-shadow: var(--shadow-card);
+}
+
+.dayHead {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.dayDate {
+  font-size: 19px;
+}
+
+.daySummary {
+  margin-left: auto;
+  font: 600 11px var(--font-sans);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.linesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  align-content: start;
+  margin-top: 8px;
+}
+
+.lineRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 2px;
+  border-bottom: 1px solid var(--inset);
+}
+
+.lineBox {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 10px var(--font-sans);
+  background: transparent;
+  border: 1.5px solid var(--line-check);
+  color: var(--on-accent);
+}
+
+.lineBoxDone {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.lineText {
+  flex: 1;
+  min-width: 0;
+  font: 500 12.5px var(--font-sans);
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lineTextDone {
+  color: var(--ink-ghost);
+  text-decoration: line-through;
+}
+
+.lineTag {
+  flex: none;
+  padding: 1px 6px;
+  border-radius: 6px;
+  font: 600 9px var(--font-sans);
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-caption);
+}

@@ -1,0 +1,110 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.greeting {
+  font-size: 28px;
+}
+
+.subtitle {
+  font: 500 14px var(--font-sans);
+  color: var(--ink-mute);
+  margin-top: 3px;
+}
+
+.pills {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.streakPill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--inset);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 8px 16px;
+  min-height: 64px;
+}
+
+.streakRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.streakNum {
+  font-size: 22px;
+  color: var(--accent);
+}
+
+.streakUnit {
+  font: 600 12px var(--font-sans);
+  color: var(--ink-soft);
+}
+
+.momentumPill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--inset);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 8px 16px 8px 8px;
+}
+
+.ring {
+  width: 48px;
+  height: 48px;
+  flex: none;
+}
+
+.ringText {
+  font: 500 18px var(--font-serif);
+  fill: var(--ink);
+}
+
+.momentumLabel {
+  font: 600 13px var(--font-sans);
+  color: var(--ink-soft);
+}
+
+/* Panel layouts inside the two carousels */
+.heroPanelA {
+  height: 100%;
+  padding: 22px 56px 22px 24px;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.heroPanelB {
+  height: 100%;
+  padding: 18px 56px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.linesPanel {
+  padding: 20px 48px 30px 22px;
+}
+
+.weeklyPanel {
+  display: flex;
+  flex-direction: column;
+}
