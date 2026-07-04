@@ -1,0 +1,30 @@
+/* Centres the app shell on the warm paper canvas (matches the handoff
+   canvas padding). The shell itself is a fixed 1200px per the design. */
+.canvas {
+  min-height: 100%;
+  padding: 48px 56px 96px;
+  min-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.shell {
+  width: 1200px;
+  display: flex;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-shell);
+  overflow: hidden;
+  box-shadow: var(--shadow-shell);
+}
+
+.main {
+  flex: 1;
+  padding: 28px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  background: var(--panel);
+  min-width: 0;
+}
