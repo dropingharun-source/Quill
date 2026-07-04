@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.tsbuildinfo
+*.local
+
+# Design handoff reference bundle — kept locally, not published.
+design_handoff_quill_dashboard/
