@@ -1,0 +1,302 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.titleDot {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  flex: none;
+}
+
+.title {
+  font-size: 27px;
+}
+
+.pctChip {
+  padding: 3px 10px;
+  border-radius: 8px;
+  font: 700 12px var(--font-sans);
+  flex: none;
+}
+
+.renameBtn {
+  flex: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: 500 14px var(--font-sans);
+  color: var(--ink-hint);
+  line-height: 1;
+  padding: 2px 4px;
+}
+
+.renameBtn:hover {
+  color: var(--ink-soft);
+}
+
+.titleInput {
+  flex: 1;
+  min-width: 0;
+  max-width: 420px;
+  border: 1px solid var(--line-input);
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 7px 12px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ckCard {
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 20px 22px;
+}
+
+.ckHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ckStar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--on-accent);
+  font-size: 20px;
+  flex: none;
+  box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ckHeadText {
+  flex: 1;
+  min-width: 0;
+}
+
+.ckLabel {
+  font-size: 19px;
+}
+
+.ckFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 16px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ckNum {
+  font-size: 32px;
+}
+
+.ckUnit {
+  font: 600 13px var(--font-sans);
+  color: var(--ink-dim);
+}
+
+.ckDate {
+  border: 1px solid var(--line-sidebar);
+  background: var(--card);
+  border-radius: 9px;
+  padding: 6px 9px;
+  font: 600 12px var(--font-sans);
+  color: var(--ink-soft);
+  outline: none;
+}
+
+.noCkCard {
+  background: var(--card);
+  border: 1px dashed var(--line-dash);
+  border-radius: var(--r-card);
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.noCkText {
+  font: 500 13px var(--font-sans);
+  color: var(--ink-dim);
+  margin-top: 3px;
+}
+
+.noCkDate {
+  background: var(--panel);
+  padding: 7px 10px;
+}
+
+.chartCard {
+  background: var(--card);
+  border: 1px solid var(--line-card);
+  border-radius: var(--r-card);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-card);
+}
+
+.chartKicker {
+  margin-bottom: 12px;
+}
+
+.chartSvg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.treeHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.treeNote {
+  font: 500 11px var(--font-sans);
+  color: var(--ink-hint);
+}
+
+.logBtn {
+  border: 1px solid var(--line-sidebar);
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--inset);
+  color: var(--ink-soft);
+  font: 600 13px var(--font-sans);
+}
+
+.closedBanner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--green-bg);
+  border: 1px solid var(--green-border);
+  border-radius: 14px;
+  padding: 14px 18px;
+}
+
+.closedCheck {
+  font: 700 16px var(--font-sans);
+  color: var(--olive);
+}
+
+.closedText {
+  flex: 1;
+  font: 600 13px var(--font-sans);
+  color: var(--green-ink);
+}
+
+.reopenBtn {
+  cursor: pointer;
+  padding: 8px 13px;
+  border-radius: 9px;
+  background: transparent;
+  border: 1px solid var(--green-btn-border);
+  color: var(--green-btn-ink);
+  font: 600 12px var(--font-sans);
+}
+
+.completeBtn {
+  border: 1px dashed var(--tan);
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--ink-dim);
+  font: 600 13px var(--font-sans);
+}
+
+.completeBtn:hover {
+  background: var(--green-bg);
+  color: var(--green-ink);
+  border-color: var(--green-btn-border);
+}
+
+.delBanner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--red-bg);
+  border: 1px solid var(--red-border);
+  border-radius: 14px;
+  padding: 14px 18px;
+  flex-wrap: wrap;
+}
+
+.delText {
+  flex: 1;
+  min-width: 180px;
+  font: 600 13px var(--font-sans);
+  color: var(--red-ink);
+}
+
+.delBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.delYes {
+  border: none;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 9px;
+  background: var(--danger);
+  color: var(--on-accent);
+  font: 600 12px var(--font-sans);
+}
+
+.delCancel {
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 9px;
+  background: transparent;
+  border: 1px solid var(--line-dash);
+  color: var(--ink-dim);
+  font: 600 12px var(--font-sans);
+}
+
+.delGhost {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--ink-hint);
+  font: 600 12px var(--font-sans);
+  align-self: center;
+}
+
+.delGhost:hover {
+  color: var(--danger);
+}

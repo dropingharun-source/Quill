@@ -1,0 +1,326 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.backLink {
+  font: 600 12px var(--font-sans);
+  color: var(--ink-faint);
+  cursor: pointer;
+}
+
+.title {
+  font-size: 27px;
+  margin-top: 6px;
+}
+
+.subtitle {
+  font: 500 14px var(--font-sans);
+  color: var(--ink-mute);
+  margin-top: 3px;
+}
+
+.overallPill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--inset);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 9px 16px;
+}
+
+.overallNum {
+  font-size: 24px;
+  color: var(--accent);
+}
+
+.chartCard {
+  background: var(--card);
+  border: 1px solid var(--line-card);
+  border-radius: var(--r-card);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-card-lg);
+  position: relative;
+}
+
+.chartHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.chartHeadLeft {
+  flex: none;
+}
+
+.chartTitle {
+  font-size: 19px;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.filterWrap {
+  position: relative;
+}
+
+.filterTrigger {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--inset);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.filterName {
+  font: 600 13px var(--font-sans);
+  color: var(--ink);
+}
+
+.filterCaret {
+  font-size: 10px;
+  color: var(--ink-faint);
+  margin-left: 2px;
+}
+
+.swatch {
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  flex: none;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font: 500 12px var(--font-sans);
+  color: var(--ink-soft);
+}
+
+.chartSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.axisTick {
+  font: 500 10px var(--font-sans);
+  fill: var(--ink-hint);
+}
+
+.tipText {
+  font: 600 13px var(--font-sans);
+  fill: var(--on-accent);
+}
+
+.xLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.xLabel {
+  font: 500 11px var(--font-sans);
+  color: var(--ink-ghost);
+}
+
+.editBar {
+  position: absolute;
+  left: 22px;
+  bottom: 20px;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 9px 11px;
+  box-shadow: 0 22px 42px -18px rgba(74, 54, 34, 0.55);
+}
+
+.editLabel {
+  font: 600 13px var(--font-sans);
+  color: var(--ink);
+}
+
+.editInput {
+  width: 62px;
+  border: 1px solid var(--line-card);
+  border-radius: 9px;
+  padding: 6px 8px;
+  font: 600 16px var(--font-serif);
+  color: var(--ink);
+  outline: none;
+  background: var(--panel);
+}
+
+.editSave {
+  border: none;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 9px;
+  background: var(--btn-dark);
+  color: var(--btn-dark-ink);
+  font: 600 12px var(--font-sans);
+}
+
+.editDelete {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 9px;
+  background: transparent;
+  border: 1px solid var(--red-btn-border);
+  color: var(--danger);
+  font: 600 12px var(--font-sans);
+}
+
+.editCancel {
+  border: none;
+  cursor: pointer;
+  padding: 6px 9px;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink-faint);
+  font: 600 14px var(--font-sans);
+}
+
+.logCard {
+  background: var(--card);
+  border: 1px solid var(--line-card);
+  border-radius: var(--r-card);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-card);
+}
+
+.logHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.logTitle {
+  font-size: 19px;
+  margin-top: 2px;
+}
+
+.addBtn {
+  border: none;
+  cursor: pointer;
+  padding: 11px 20px;
+  border-radius: 12px;
+  background: var(--btn-dark);
+  color: var(--btn-dark-ink);
+  font: 600 13px var(--font-sans);
+}
+
+.segWrap {
+  margin-bottom: 16px;
+}
+
+.mockGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.singleGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 14px;
+  max-width: 480px;
+}
+
+.tile {
+  border: 1px solid var(--line-card);
+  border-radius: 14px;
+  padding: 13px 15px;
+  background: var(--panel);
+}
+
+.tileHead {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.tileDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 3px;
+}
+
+.tileLabel {
+  font: 600 11px var(--font-sans);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-caption);
+}
+
+.tileInput {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font: 500 27px var(--font-serif);
+  color: var(--ink);
+  margin-top: 6px;
+}
+
+.tileLast {
+  font: 500 11px var(--font-sans);
+  color: var(--ink-faint);
+}
+
+.skillTile {
+  position: relative;
+}
+
+.skillTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.skillName {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font: 600 19px var(--font-sans);
+  color: var(--ink);
+}
+
+.skillCaret {
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+.hint {
+  font: 500 12px var(--font-sans);
+  color: var(--ink-ghost);
+  margin-top: 12px;
+}
