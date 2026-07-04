@@ -1,0 +1,76 @@
+@import './tokens.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Serif display helper — matches the .nr class in the handoff. */
+.serif {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+/* Uppercase eyebrow labels. The handoff uses two trackings: .12em on stat
+   pills / checkpoint, .13em on card kickers. */
+.eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.eyebrowWide {
+  letter-spacing: 0.13em;
+}
+
+button {
+  font-family: inherit;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Ambient animations for the hero tree's sky (referenced from inline
+   animation shorthands, so they must live at global scope). */
+@keyframes qdrift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes qfloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}

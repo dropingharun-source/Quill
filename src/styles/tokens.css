@@ -1,0 +1,90 @@
+/*
+ * Quill design tokens — "warm paper" system.
+ * Values lifted from the Claude Design handoff (Quill — Personal Goal &
+ * Progress Journal). Every hex here appears in the handoff prototype.
+ */
+:root {
+  /* Surfaces */
+  --paper: #efe4d2; /* page background */
+  --panel: #fbf4e8; /* app main pane / input bg */
+  --card: #fffdf8; /* raised card */
+  --sidebar: #eadfcb; /* sidebar fill; also warm hover fills + timeline connector */
+  --inset: #f3ead9; /* pills, segmented controls, chips, row dividers */
+  --inset-warm: #f7eddd; /* carry-over banner, selected dropdown option */
+  --track: #f0e7d6; /* progress-bar track, chart gridlines, General chip tint */
+  --ground: #e4d6be; /* tree ground, momentum ring track, sidebar item hover */
+
+  /* Ink */
+  --ink: #3a332b; /* primary text + dark buttons */
+  --ink-soft: #6f6354; /* secondary text */
+  --ink-mute: #97897a; /* subtitles */
+  --ink-dim: #8a7c69; /* countdown suffix, birds, ghost buttons */
+  --ink-faint: #a2937f; /* uppercase eyebrow labels */
+  --ink-ghost: #b0a38e; /* axis ticks, done text, empty states */
+  --ink-hint: #c2b49c; /* faintest hints, idle icon buttons */
+  --ink-deep: #5a4f3f; /* reflection quote, tiny-goal text, avatar initial */
+  --ink-caption: #7a6e5d; /* hero caption, input-tile labels */
+
+  /* Lines */
+  --line: #e6dac6; /* shell / pill borders */
+  --line-card: #ece1cf; /* card borders, stat dividers */
+  --line-sidebar: #e0d3bc;
+  --line-input: #d8c6a8; /* inline-edit input border, handle hover border */
+  --line-check: #d9cbb4; /* unchecked checkbox border */
+  --line-dash: #dbc9ac; /* dashed borders, ghost button borders */
+  --grid: #f0e7d6; /* chart gridlines (alias of --track) */
+  --tan: #c9b79a; /* avatar bg, chart selector line, complete-button dashes */
+
+  /* Accents */
+  --accent: #c5683f; /* terracotta — brand / Listening */
+  --gold: #dd9a36; /* Reading */
+  --olive: #8b9b6e; /* Writing / weekly green */
+  --slate: #6e86a0; /* Speaking */
+  --danger: #b4512f; /* destructive, fruits */
+  --skill-neutral: #9a8c78; /* "All skills" swatch */
+  --on-accent: #fff6ec; /* text/checks on accent fills */
+  --accent-ink: #fff4e8; /* logo "Q" */
+  --btn-dark: #3a332b;
+  --btn-dark-ink: #f4ecdd;
+  --repeat-idle: #d5c8b0; /* repeat-daily button, idle */
+  --dot-idle: #dbcdb4; /* carousel dot, idle */
+
+  /* Nature (hero tree) */
+  --branch: #7a5636; /* also carry-banner text */
+  --leaf-empty: #f3ead9;
+  --leaf-empty-stroke: #cfc1a8;
+  --sun: #e8b84b;
+  --cloud: #ede2cd;
+  --canopy-blob: #dee7cb;
+
+  /* Status tints */
+  --green-bg: #e9eedd; /* daily badge, chapter-complete banner */
+  --green-border: #d3ddbc;
+  --green-ink: #5a6647;
+  --green-btn-border: #b9c79a;
+  --green-btn-ink: #6e7c52;
+  --red-bg: #f7e3da;
+  --red-border: #ebc7b6;
+  --red-ink: #8a4630;
+  --red-btn-border: #e0c4b8;
+  --carry-border: #ebd9be;
+
+  /* Avatar */
+  --avatar: #c9b79a;
+  --avatar-ink: #5a4f3f;
+
+  /* Radii */
+  --r-shell: 24px;
+  --r-card: 18px;
+  --r-pill: 11px;
+
+  /* Shadows */
+  --shadow-shell: 0 40px 80px -50px rgba(74, 54, 34, 0.6);
+  --shadow-card: 0 16px 28px -24px rgba(74, 54, 34, 0.5);
+  --shadow-card-lg: 0 20px 34px -26px rgba(74, 54, 34, 0.5);
+  --shadow-pop: 0 26px 44px -22px rgba(74, 54, 34, 0.55);
+
+  /* Type */
+  --font-sans: 'Hanken Grotesk', system-ui, sans-serif;
+  --font-serif: 'Newsreader', Georgia, serif;
+}
