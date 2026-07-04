@@ -1,0 +1,206 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.segWrap {
+  margin-top: 7px;
+}
+
+.selReadout {
+  text-align: right;
+  flex: none;
+}
+
+.selPct {
+  font-size: 26px;
+  color: var(--accent);
+}
+
+.selDate {
+  font: 500 12px var(--font-sans);
+  color: var(--ink-faint);
+}
+
+.legend {
+  display: flex;
+  gap: 14px;
+  margin: 2px 0 4px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font: 500 11px var(--font-sans);
+  color: var(--ink-soft);
+}
+
+.legendSolid {
+  width: 14px;
+  height: 2.5px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.legendDashed {
+  width: 14px;
+  height: 0;
+  border-top: 2.5px dashed var(--olive);
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.axisTick {
+  font: 500 10px var(--font-sans);
+  fill: var(--ink-hint);
+}
+
+.xLabels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  margin-top: 4px;
+}
+
+.xLabel {
+  font: 500 11px var(--font-sans);
+  color: var(--ink-ghost);
+}
+
+.popBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 6;
+}
+
+.popover {
+  position: absolute;
+  z-index: 7;
+  width: 264px;
+  bottom: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  box-shadow: 0 20px 40px -18px rgba(74, 54, 34, 0.5);
+  padding: 12px 14px;
+}
+
+.popHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.popDate {
+  font: 600 13px var(--font-sans);
+  color: var(--ink);
+}
+
+.popSummary {
+  margin-left: auto;
+  font: 600 11px var(--font-sans);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.popClose {
+  flex: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: 500 16px var(--font-sans);
+  color: var(--ink-hint);
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.popClose:hover {
+  color: var(--danger);
+}
+
+.popKicker {
+  font: 600 9px var(--font-sans);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 4px;
+}
+
+.popList {
+  display: flex;
+  flex-direction: column;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.popRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 2px;
+  border-bottom: 1px solid var(--inset);
+}
+
+.popBox {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 10px var(--font-sans);
+  background: transparent;
+  border: 1.5px solid var(--line-check);
+  color: var(--on-accent);
+}
+
+.popBoxDone {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.popText {
+  flex: 1;
+  min-width: 0;
+  font: 500 12.5px var(--font-sans);
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popTextDone {
+  color: var(--ink-ghost);
+  text-decoration: line-through;
+}
+
+.popTag {
+  flex: none;
+  padding: 1px 6px;
+  border-radius: 6px;
+  font: 600 9px var(--font-sans);
+}
+
+.popEmpty {
+  padding: 10px 2px;
+  font: 500 12px var(--font-sans);
+  color: var(--ink-ghost);
+}
+
+.popNote {
+  margin-top: 8px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-caption);
+}

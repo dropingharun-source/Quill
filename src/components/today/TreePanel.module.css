@@ -1,0 +1,78 @@
+.treeBox {
+  flex: none;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treeSvg {
+  width: 212px;
+  height: auto;
+  overflow: visible;
+}
+
+.copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.headline {
+  font-size: 22px;
+  margin-top: 3px;
+}
+
+.caption {
+  font: 500 14px var(--font-sans);
+  color: var(--ink-caption);
+  margin-top: 11px;
+  line-height: 1.55;
+  max-width: 440px;
+}
+
+.stats {
+  display: flex;
+  gap: 26px;
+  margin-top: 16px;
+}
+
+.statNum {
+  font-size: 22px;
+}
+
+.statLabel {
+  font: 500 11px var(--font-sans);
+  color: var(--ink-faint);
+}
+
+.statDivider {
+  width: 1px;
+  background: var(--line-card);
+}
+
+.weekPill {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background: var(--inset);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 9px 14px;
+  width: max-content;
+}
+
+.weekPill:hover {
+  background: var(--sidebar);
+}
+
+.weekCount {
+  font: 600 12px var(--font-sans);
+  color: var(--ink-soft);
+}
+
+.weekNote {
+  font: 500 11px var(--font-sans);
+  color: var(--ink-hint);
+}
