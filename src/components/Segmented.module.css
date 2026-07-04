@@ -1,0 +1,33 @@
+.wrap {
+  display: flex;
+  gap: 6px;
+  background: var(--inset);
+  border-radius: 9px;
+  padding: 3px;
+  width: max-content;
+}
+
+.seg {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font: 500 12px var(--font-sans);
+  color: var(--ink-faint);
+}
+
+.range {
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.log {
+  padding: 5px 13px;
+  border-radius: 7px;
+}
+
+.active {
+  background: var(--card);
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(74, 54, 34, 0.12);
+}
