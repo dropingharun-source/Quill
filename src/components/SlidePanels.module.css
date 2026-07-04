@@ -1,0 +1,78 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--line-card);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow-card-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  align-items: stretch;
+  transition: transform 0.38s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+.panel {
+  flex: none;
+  width: 50%;
+  min-width: 0;
+}
+
+.handle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 68px;
+  border-radius: 99px;
+  background: var(--inset);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-faint);
+  font: 600 16px var(--font-sans);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  z-index: 5;
+  box-shadow: 0 6px 12px -8px rgba(74, 54, 34, 0.4);
+  outline: none;
+}
+
+.handle:hover {
+  border-color: var(--line-input);
+  background: var(--sidebar);
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  z-index: 4;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+  background: var(--dot-idle);
+}
+
+.dotOn {
+  background: var(--accent);
+}
